@@ -219,6 +219,7 @@ header{
     text-decoration: none;
     color:var(--darklight);
     display: inline-block;
+    border-radius: 20px;
     background:var(--darklight);
     color: #fff;
     padding: 0.55rem 1.2rem;
