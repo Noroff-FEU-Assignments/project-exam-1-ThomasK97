@@ -334,7 +334,7 @@ footer{
 }
 
 @media screen and (min-width: 1200px){
-    .blog-content{
+    .post{
         grid-template-columns: repeat(3, 1fr);
     }
 }
