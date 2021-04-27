@@ -292,6 +292,37 @@ footer{
 }
 
 
+
+/*contact form*/
+.contactform{
+    padding: 2rem;
+    color: var(--darklight);
+    border-radius: 1em;
+
+}
+
+input{
+    width: 100%;
+    margin-top: 2px;
+    padding: 10px;
+    font-size: 16px;
+}
+
+    
+label{
+    display: block;
+    margin-top: 1rem;
+
+}
+
+.form-error{
+    display: none;
+    color: rgb(249, 109, 109);
+    font-size: 0.9rem;
+    margin-top: ;
+}
+
+
 /* media queries*/
 
 @media screen and (min-width: 540px){
@@ -325,6 +356,8 @@ footer{
     .post{
         margin: 0;
     }
+
+    
 
 
 }
