@@ -173,6 +173,9 @@ header{
 .post-img{
     position: relative;
     overflow: hidden;
+    
+    
+    
 }
 
 .post-img span:first-of-type{
