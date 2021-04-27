@@ -4,8 +4,8 @@
     --Playfair: 'Playfair Display', serif;
     --Quiksand: 'Quiksand', sans-serif;
     --Roboto: 'Roboto', sans-serif;
-    --dark: #3c393d;
-    -exdark: #2b2b2b;
+    --light: #d4d7cb;
+    --darklight: #bfb0b0;
 }
 
 *{
@@ -16,7 +16,7 @@
 
 body{
     line-height: 1.4;
-    color: var(--dark);
+    color: var(--light);
 }
 
 img{
@@ -32,5 +32,204 @@ img{
 /*header*/
 header{
     min-height: 100vh;
-   
+    background: url(/media/klokkebakgrunn2.jpg) center/ cover no-repeat fixed;
+    display: flex;
+    flex-direction: column;
+    justify-content: stretch;
 }
+
+.navbar{
+    background: rgba(140, 132, 132, 0.6);
+    padding: 1.2rem;
+}
+.navbar-brand{
+    color: #fff;
+    font-size: 2rem;
+    display: block;
+    text-align: center;
+    text-decoration: none;
+    font-family: var(--Playfair);
+    letter-spacing: 1px;
+}
+
+.navbar-nav{
+    padding: 0.8rem 0 0.2rem 0;
+    text-align: center;
+}
+
+.navbar-nav a{
+    text-transform: uppercase;
+    font-family: var(--Roboto);
+    letter-spacing: 1px;
+    font-weight: 500;
+    color: #fff;
+    text-decoration: none;
+    display: inline-block;
+    padding: 0.4rem 0.1rem;
+    letter-spacing: 3px;
+    transition: opacity 0.5s ease;
+}
+
+.navbar-nav a:hover{
+    opacity: 0.7;
+    color:rgb(185, 248, 255);
+}
+
+.banner{
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: #fff;
+}
+.main-title{
+    font-size: 3rem;
+    font-family: var(--Playfair);
+    line-height: 1.2;
+}
+.main-title span{
+    font-family: var(--Playfair);
+    color: var(--darklight);
+}
+.banner p{
+    padding: 1rem 0 2rem 0;
+    font-size: 1.2rem;
+    text-transform: capitalize;
+    font-family:var(--Roboto);
+    font-weight: 300;
+    word-spacing: 2px;
+}
+
+.banner form{
+    background: #fff;
+    border-radius: 2rem;
+    padding: 0.6rem 1rem;
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.search{
+    font-family: var(--Roboto);
+    font-size: 1.1rem;
+    width: 100%;
+    outline: 0;
+    padding: 0.6rem 0;
+    border: none;
+
+}
+
+.search::placeholder{
+    text-transform: capitalize;
+}
+
+.search-btn{
+    width: 40px;
+    font-size: 1.1rem;
+    color: var(--darklight);
+    border: none;
+    background: transparent;
+    outline: 0;
+    cursor: pointer;
+}
+
+/*blog post*/
+
+.blog{
+
+    padding: 4.5rem 0;
+}
+
+.title{
+    text-align: center;
+    padding: 1rem 0;
+}
+
+.title h2{
+    font-family:var(--Playfair);
+    font-size: 2.4rem;
+    color:rgb(80, 68, 68)
+    
+}
+.title p{
+    text-transform: uppercase;
+    padding: 0.6rem 0;
+    color:var(--darklight);
+
+}
+
+
+.blog-content{
+    margin: 2rem 0;
+}
+
+.post{
+    cursor: pointer;
+    margin: 1.5rem 0;
+
+}
+
+.post-img{
+    position: relative;
+    overflow: hidden;
+}
+
+.post-img span:first-of-type{
+    position: absolute;
+    z-index: 1;
+    top: 10px;
+    left: 10px;
+    background: var(--darklight);
+    color: #fff;
+    padding: 0.25rem 1 rem;
+}
+.post-text{
+    margin: 2.2rem 0;
+    padding: 0 1rem;
+}
+
+.post-text span{
+    font-weight: 300;
+    display: block;
+    padding-bottom: 0.5rem;
+}
+
+
+.post-text h2{
+    font-family: var(--Playfair);
+    padding: 1rem 0;
+    font-size: 1.65rem;
+    font-weight: 500;
+    color:rgb(80, 68, 68);
+}
+
+.post-text p{
+    font-weight: 300;
+    font-size: 1.1rem;
+    opacity: 0.9;
+    padding-bottom: 1.2rem;
+    color: var(--darklight);
+
+}
+
+.post-text a{
+    font-family: var(--Roboto);
+    font-size: 1.1rem;
+    text-decoration: none;
+    color:var(--darklight);
+    display: inline-block;
+    background:var(--darklight);
+    color: #fff;
+    padding: 0.55rem 1.2rem;
+    transition: all 0.5s ease;
+
+}
+
+.post-text a:hover{
+    background:rgb(104, 103, 99);
+}
+
+
+
+
