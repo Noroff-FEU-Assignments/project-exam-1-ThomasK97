@@ -17,7 +17,7 @@ function listPosts (posts) {
         <li>
             <a href="bloggspesific.html?id=${post.id}">
             <h3>${post.title.rendered}</h3>
-            <p>${post.content.rendered}</p>
+            <p>${post.excerpt.rendered}</p>
     
             
             

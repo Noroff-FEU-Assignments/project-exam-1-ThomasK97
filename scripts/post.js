@@ -14,23 +14,21 @@ fetch(url)
 });
 
 const output = document.querySelector("#post");
-function displayPost (data) {
+function displayPost (data){
     console.log(data);
-    
-
+    const title = data.title.rendered;
+    const excerpt = data.excerpt.rendered;
+    const link = data.link;
     let content = `
-    <li>
-        <a href="bloggspesific.html?id=${post.id}">
-        <h3>${post.title.rendered}</h3>
-        
-        
-            
-            
-            
-        
-        </a>
-    </li>`;
+    <h1>${title}</h1>
+    <p>${data.content.rendered}</p>
+     
+    `
+   
 
-    output.innerHTML = content;
+    output.innerHTML = 
+    content;document.title = title;
+
+
+} 
     
-}
