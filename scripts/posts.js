@@ -31,3 +31,7 @@ function listPosts (posts) {
     }
     output.innerHTML = myList;
 }
+
+
+
+  

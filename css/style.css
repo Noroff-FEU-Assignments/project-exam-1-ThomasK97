@@ -176,12 +176,14 @@ header{
     width: 50%;
     align-content: center;
     margin: auto;
+    
+    
+    
 }
 
 h3{
     
     padding: 1rem 0;
-    list-style: none;
     color:rgb(80, 68, 68);
 }
 
@@ -192,10 +194,10 @@ h3{
     display: inline-block; 
 }
 
+/*Post end*/
 
 
-/*Post*/
-
+/*spesific post*/
 #post{
     text-align: center;
     padding: 1rem 0;
@@ -205,7 +207,13 @@ h3{
 
 
 
-/* carousel posts/*
+/* carousel posts*/
+
+
+
+
+
+
 
 
 
