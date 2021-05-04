@@ -1,8 +1,11 @@
-@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600;700;800;900&family=Quicksand:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rufina:wght@400;700&display=swap');
 
 :root{
     --Playfair: 'Playfair Display', serif;
-    --Quiksand: 'Quiksand', sans-serif;
+    --Amatic: 'Amatic SC', cursive;
+    --Rufina: 'Rufina', serif;
     --Roboto: 'Roboto', sans-serif;
     --light: #d4d7cb;
     --darklight: #bfb0b0;
@@ -11,7 +14,7 @@
 *{
     padding: 0;
     margin: 0;
-    font-family: var(--Quiksand);
+    font-family: var(--Roboto);
 }
 
 body{
@@ -134,7 +137,7 @@ header{
     cursor: pointer;
 }
 
-/*blog post*/
+/*blog post header*/
 
 .blog{
 
@@ -156,10 +159,51 @@ header{
     text-transform: uppercase;
     padding: 0.6rem 0;
     color:var(--darklight);
+    
 
 }
 
-/*blog post end*/
+/*blog post header end*/
+
+/*posts*/
+
+
+
+#posts{
+    
+    text-align: center;
+    padding: 1rem 0;
+    width: 50%;
+    align-content: center;
+    margin: auto;
+}
+
+h3{
+    
+    padding: 1rem 0;
+    list-style: none;
+    color:rgb(80, 68, 68);
+}
+
+#posts p{ 
+    color: var(--darklight);
+    padding: 1rem 0;
+    list-style: none;
+    display: inline-block; 
+}
+
+
+
+/*Post*/
+
+#post{
+    text-align: center;
+    padding: 1rem 0;
+}
+
+
+
+
 
 /* carousel posts/*
 
@@ -190,7 +234,7 @@ header{
     padding: 0.6rem 0;
     opacity: 0.8;
     color: var(--darklight);
-    font-family:var(--Roboto);
+    font-family:var(--Rufina);
 
 }
 
