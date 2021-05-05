@@ -212,6 +212,7 @@ h3{
 }
 
 #post h1{
+    padding: 1rem;
     font-family: var(--Playfair);
     color:rgb(80, 68, 68);
 }
