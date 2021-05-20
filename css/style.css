@@ -104,38 +104,7 @@ header{
     word-spacing: 2px;
 }
 
-.banner form{
-    background: #fff;
-    border-radius: 2rem;
-    padding: 0.6rem 1rem;
-    display: flex;
-    justify-content: space-between;
 
-}
-
-.search{
-    font-family: var(--Roboto);
-    font-size: 1.1rem;
-    width: 100%;
-    outline: 0;
-    padding: 0.6rem 0;
-    border: none;
-
-}
-
-.search::placeholder{
-    text-transform: capitalize;
-}
-
-.search-btn{
-    width: 40px;
-    font-size: 1.1rem;
-    color: var(--darklight);
-    border: none;
-    background: transparent;
-    outline: 0;
-    cursor: pointer;
-}
 
 /*blog post header*/
 
@@ -232,11 +201,58 @@ h3{
 
 /* carousel posts*/
 
+.carousel{
+    overflow: hidden;
+    max-width: 600px;
+    position: relative;
+    margin: 0 auto;
+    padding: 5rem 0;
+    margin-top: -10%;
+    
+}
 
+.carousel .carousel__item,
+.carousel .carousel__item--hidden{
+    display: none;
+}
 
+.carousel .carousel__item img{
+    width: 100%;
+    max-width: 600px;
+    height: auto;
+    
+}
 
+.carousel .carousel__item--vissible{
+    display: block;
+}
 
+.carousel .carousel__actions {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
 
+.carousel .carousel__actions button{
+    border-radius: 50px;
+    border: 0;
+    font-weight:bold;
+    cursor: pointer;
+    width: 40px;
+    height: 40px;
+   
+}
+
+.carousel__actions button#carousel__button--prev{
+    margin-left: 20px;
+}
+
+.carousel__actions button#carousel__button--next{
+    margin-right: 20px;
+}
 
 
 
@@ -359,9 +375,7 @@ label{
         justify-content: space-between;
     }
 
-    .search{
-        padding: 0.8rem 0;
-    }
+    
     .blog-content{
         display: grid;
         grid-template-columns: repeat(2, 1fr);
