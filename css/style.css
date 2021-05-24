@@ -324,32 +324,48 @@ footer{
 
 
 /*contact form*/
-.contactform{
-    padding: 2rem;
-    color: var(--darklight);
-    border-radius: 1em;
-
-}
-
-input{
-    width: 100%;
-    margin-top: 2px;
-    padding: 10px;
-    font-size: 16px;
-}
-
+.container-contact{
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 35px;
+    border-radius: 5px;
     
-label{
-    display: block;
-    margin-top: 1rem;
-
+}
+.row{
+    display: flex;
+    flex-flow: wrap;
+    margin: 0 -15;
 }
 
-.form-error{
-    display: none;
-    color: rgb(249, 109, 109);
-    font-size: 0.9rem;
-    margin-top: ;
+.column{
+    flex: 0 0 100%;
+    padding: 0 15px;
+}
+
+input, textarea{
+    width: 50%;
+    padding: 15px 20px;
+    margin: 0 0 30px;
+    font-family: var(--Playfair);
+    background-color:white;
+    border-radius: 3px;
+    font-size: 16px;
+    border: 0;
+}
+
+textarea{
+    height: 150px;
+    resize: none;
+}
+input[type="submit"]{
+    display: block;
+    margin: 0 auto;
+    width: 150px;
+    text-align: center;
+    cursor: pointer;
+    background-color:var(--darklight);
+    font-size: 18px;
+    
 }
 
 

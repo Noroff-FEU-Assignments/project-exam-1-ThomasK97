@@ -31,53 +31,28 @@
 
           <!------contact form----->
         <div class="banner">
-            <contactForm id="contactform">
-
-                 
-                <div>
-                    <p>Contact me</p>
-                    <label>
-                        Full name
-                        <input name="fullName" id="fullName">
-                    
-                    </label>
-                    <div class="form-error" id="fullNameError">Please enter your full name here</div>
+        <div class="container-contact">
+            <form action="">
+                <div class="row">
+                    <div class="column">
+                        <input type="text" placeholder="Name*" name="Name" required>
+                    </div>
+                    <div class="column">
+                        <input type="email" placeholder="Email*" name="Email" required>
+                    </div>
+                    <div class="column">
+                        <input type="text" placeholder="Subject*" name="Subject" required>
+                    </div>
+                    <div class="column">
+                        <textarea placeholder="Message*" name="Message" required></textarea>
+                    </div>
+                    <div class="column">
+                        <input type="submit" value="SUBMIT">
+                    </div>
                 </div>
-
-                <div>
-                    <label>
-                        Email
-                        <input type="email" name="email" id="email"/>
-                    </label>
-                    <div class="form-error" id="emailError">Please enter a valid email here</div>
-                </div>
-
-                <div>
-                    <label>
-                        Subject
-                        <input name="subject" id="subject"/>
-                    </label>
-                    <div class="form-error" id="subjectError">Please enter your subject here</div>
-                </div>
-
-                <div>
-                    <label>
-                        Message
-                        <input name="message" id="message"/>
-                    </label>
-                    <div class="form-error" id="messageError">Please enter your message</div>
-                </div>
-
-                
-
-                
-                
-                
-            </div>
-
-    <button>Submit</button>
-        </form>
+            </form>
         </div>
+            
     </header>
 
     <!-----contact form ends------>
