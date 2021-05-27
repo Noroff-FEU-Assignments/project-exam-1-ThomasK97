@@ -495,6 +495,12 @@ input[type="submit"]{
         padding-bottom: 1rem;
     }
     
+    #post img{
+        max-height: 300px;
+    }
+    #post p{
+        width: 100%;
+    }
 
     
 
@@ -531,6 +537,21 @@ input[type="submit"]{
     .blog{
         padding-bottom: 1rem;
     }
+    #post{
+        text-align: center;
+        padding: 1rem 0;
+        width: 90%;
+        align-content: center;
+        margin: auto;
+        list-style: none;
+    }
+    #post img{
+        max-height: 500px;
+    }
+    #post p{
+        width: 100%;
+    }
+    
     
 }
 
