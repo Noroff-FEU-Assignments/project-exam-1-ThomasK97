@@ -1,44 +1,29 @@
-let slidePosition = 0;
-const slides = document.getElementsByClassName('carousel__item');
-const totalSlides = slides.length;
 
-document.
-getElementById('carousel__button--next')
-.addEventListener("click", function(){
-    moveToNextSlide();
-});
-document.
-getElementById('carousel__button--prev')
-.addEventListener("click", function(){
-    moveToPrevSlide();
-});
+var slideIndex = 1;
+showSlides(slideIndex);
 
-function updateSlidePosition(){
-    for(let slide of slides){
-        slide.classList.remove('carousel__item--vissible');
-        slide.classList.add('carousel__item--hidden');
-
-    }
-    slides[slidePosition].classList.add('carousel__item--vissible');
+// Next/previous controls
+function plusSlides(n) {
+  showSlides(slideIndex += n);
 }
 
-function moveToNextSlide(){
-    
-    if(slidePosition === totalSlides -1){
-        slidePosition = 0;
-    } else{
-        slidePosition++;
-    }
-    updateSlidePosition();
+// Thumbnail image controls
+function currentSlide(n) {
+  showSlides(slideIndex = n);
 }
 
-function moveToPrevSlide(){
-    
-    if(slidePosition === 0){
-        slidePosition = totalSlides -1;
-    } else{
-        slidePosition--;
-    }
-    updateSlidePosition();
-    
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
 }
