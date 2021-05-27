@@ -22,6 +22,7 @@ function displayPost (data){
     let content = `
     <h1>${title}</h1>
     <p>${data.content.rendered}</p>
+    <a href="blogposts.html"> &lt; Back</a>
      
     `
    

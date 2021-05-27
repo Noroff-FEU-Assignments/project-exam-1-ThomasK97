@@ -193,6 +193,12 @@ h3{
     display: inline-block; 
 }
 
+#post a{
+    color: rgb(80, 68, 68);
+}
+
+
+
 /*spesific post end*/
 
 
@@ -311,7 +317,7 @@ footer{
     border-radius: 50%;
     text-decoration: none;
     margin: 0 0.3rem;
-    transition: all 0.5s ease;
+   
 }
 
 .footer span{
@@ -339,7 +345,6 @@ footer{
 
 .column{
     flex: 0 0 100%;
-    padding: 0 15px;
 }
 
 input, textarea{
@@ -366,32 +371,77 @@ input[type="submit"]{
     background-color:var(--darklight);
     font-size: 18px;
     
+    
 }
 
 
 /* media queries*/
 
+@media screen and (min-width: 375px){
+    .carousel{
+        width: 70%;
+        
+    }
+
+    .container-contact{
+        margin: 0 auto;
+        width: 70%;
+    }
+    
+
+    #posts{
+        
+        margin: 0 auto;
+        list-style: none;
+        display: grid;
+        grid-template-columns:100%;
+    }
+
+    .blog{
+        padding-bottom: 1rem;
+    }
+
+    #post{
+        text-align: center;
+        padding: 1rem 0;
+        width: 50%;
+        align-content: center;
+        margin: auto;
+        list-style: none;
+    }
+    
+    #post h1{
+        padding: 1rem;
+        font-family: var(--Playfair);
+        color:rgb(80, 68, 68);
+    }
+    
+
+    
+
+    
+}
+
 @media screen and (min-width: 540px){
     .navbar-nav a{
         padding-right:1.2rem;
         padding-left: 1.2rem;
+        
+
     }
-    .banner form{
-        margin-top: 1.4rem;
+    .carousel{
+        width: 70%; 
+    }
+    .container-contact{
+        margin: 0 auto;
         width: 80%;
-        margin-left:auto;
-        margin-right: auto;
     }
+    
 }
 
-@media screen and(min-width: 768px){
-    .navbar .container{
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-    }
-
+@media screen and (min-width: 768px){
     
+
     .blog-content{
         display: grid;
         grid-template-columns: repeat(2, 1fr);
@@ -400,6 +450,43 @@ input[type="submit"]{
     .post{
         margin: 0;
     }
+    .carousel{
+        width: 100%;    
+
+    }
+
+    .container-contact{
+        margin: 0 auto;
+        width: 80%;
+    }
+
+    #posts{
+    
+        text-align: center;
+        width: 80%;
+        padding: 1rem 0;
+        align-content: center;
+        margin: auto;
+        list-style: none;
+        display: grid;
+        grid-template-columns:50% 50%;
+        
+        
+        
+    }
+
+    #posts p{ 
+        font-family: var(--Roboto);
+        color: var(--darklight);
+        padding: 1rem 0;
+        list-style: none;
+        display: inline-block; 
+    }
+
+    .blog{
+        padding-bottom: 1rem;
+    }
+    
 
     
 
@@ -411,12 +498,75 @@ input[type="submit"]{
     .blog-content{
         grid-template-columns: repeat(3, 1fr);
     }
+
+    #posts{
+    
+        text-align: center;
+        width: 70%;
+        padding: 1rem 0;
+        align-content: center;
+        margin: auto;
+        list-style: none;
+        display: grid;
+        grid-template-columns:50% 50%;
+        
+    }
+
+    #posts p{ 
+        font-family: var(--Roboto);
+        color: var(--darklight);
+        padding: 1rem 0;
+        list-style: none;
+        display: inline-block; 
+    }
+
+    .blog{
+        padding-bottom: 1rem;
+    }
     
 }
 
 @media screen and (min-width: 1200px){
     .blog-content{
         grid-template-columns: repeat(3, 1fr);
+    }
+    .carousel{
+        width: 100%;    
+
+    }
+
+    .container-contact{
+        margin: 0 auto;
+        width: 80%;
+    }
+    #posts{
+    
+        text-align: center;
+        width: 70%;
+        padding: 1rem 0;
+        align-content: center;
+        margin: auto;
+        list-style: none;
+        display: grid;
+        grid-template-columns:50% 50%;
+        
+        
+        
+    }
+
+    #post{
+        text-align: center;
+        padding: 1rem 0;
+        width: 50%;
+        align-content: center;
+        margin: auto;
+        list-style: none;
+    }
+    
+    #post h1{
+        padding: 1rem;
+        font-family: var(--Playfair);
+        color:rgb(80, 68, 68);
     }
 }
 
