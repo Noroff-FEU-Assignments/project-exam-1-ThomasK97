@@ -132,6 +132,7 @@ header{
 
 }
 
+
 /*blog post header end*/
 
 /*posts*/
@@ -187,7 +188,7 @@ h3{
 }
 #post p{ 
     font-family: var(--Roboto);
-    color: var(--darklight);
+    color:var(--darklight);
     padding: 1rem 0;
     list-style: none;
     display: inline-block; 
