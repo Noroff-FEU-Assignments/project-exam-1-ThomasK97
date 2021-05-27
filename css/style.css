@@ -405,7 +405,7 @@ input[type="submit"]{
     #post{
         text-align: center;
         padding: 1rem 0;
-        width: 50%;
+        width: 70%;
         align-content: center;
         margin: auto;
         list-style: none;
@@ -415,6 +415,13 @@ input[type="submit"]{
         padding: 1rem;
         font-family: var(--Playfair);
         color:rgb(80, 68, 68);
+    }
+
+    #post img{
+        max-height: 200px;
+    }
+    #post p{
+        width: 100%;
     }
     
 
@@ -569,6 +576,13 @@ input[type="submit"]{
         font-family: var(--Playfair);
         color:rgb(80, 68, 68);
     }
+    #post img{
+        max-height: 500px;
+    }
+    #post p{
+        width: 100%;
+    }
+    
 }
 
 
