@@ -208,81 +208,24 @@ h3{
 
 /* carousel posts*/
 
-*{
-    box-sizing: border-box;
+.slider{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    text-align: center;
 }
 
-.slide-container{
-    max-width: 1000px;
-    position: relative;
-    margin: auto;
-}
-
-.prev, .next{
-    cursor: pointer;
-    position: absolute;
-    top: 50%;
-    width: auto;
-    margin-top: -22px;
-    padding: 16px;
-    color: black;
+.slider button{
+    border-radius: 50px;
+    border: 0;
     font-weight: bold;
-    font-size: 18px;
-    transition: 0.6s ease;
-    border-radius: 0 3px 3px 0;
-    user-select: none;
-}
-
-.next{
-    right: 0;
-    border-radius: 3px 0 0 3px;
-}
-
-.prev:hover, .next:hover{
-    background-color: rgba(121, 238, 231, 0.8);
-
-}
-
-.numbertext{
-    color: rgba(0, 0, 0, 0.8);
-    font-size: 12px;
-    padding: 8px 12px;
-    position: absolute;
-    top: 0;
-}
-
-.dot {
     cursor: pointer;
-    height: 15px;
-    width: 15px;
-    margin: 0 2px;
-    background-color: #bbb;
-    border-radius: 50%;
-    display: inline-block;
-    transition: background-color 0.6s ease;
-  }
-
-  .active, .dot:hover{
-      background-color: #71717171;
-  }
-
-  .fade{
-      -webkit-animation-name:fade;
-      -webkit-animation-duration: 1.5s;
-      animation-name: fade;
-      animation-duration: 1.5s;
-  }
-
-  @-webkit-keyframes fade {
-    from {opacity: .4}
-    to {opacity: 1}
-  }
-  
-  @keyframes fade {
-    from {opacity: .4}
-    to {opacity: 1}
-  }
-
+    width: 40px;
+    height: 40px;
+}
+.slider div{
+    margin: 30px;
+}
 
 
 
@@ -401,17 +344,18 @@ input[type="submit"]{
 /* media queries*/
 
 @media screen and (min-width: 375px){
-    .carousel{
-        width: 70%;
-        
-    }
 
+     
+    
+    /*carouselslide*/
+    
+    /*contact*/
     .container-contact{
         margin: 0 auto;
-        width: 70%;
+        width: 80%;
     }
     
-
+   /*blogposts*/
     #posts{
         
         margin: 0 auto;
@@ -424,6 +368,8 @@ input[type="submit"]{
         padding-bottom: 1rem;
     }
 
+
+    /*spesificpost*/
     #post{
         text-align: center;
         padding: 1rem 0;
@@ -453,15 +399,20 @@ input[type="submit"]{
 }
 
 @media screen and (min-width: 540px){
+
+    /*navbar*/
+
+    
     .navbar-nav a{
         padding-right:1.2rem;
         padding-left: 1.2rem;
         
+        
 
     }
-    .carousel{
-        width: 70%; 
-    }
+    /*contact*/
+   
+
     .container-contact{
         margin: 0 auto;
         width: 80%;
@@ -477,19 +428,16 @@ input[type="submit"]{
         grid-template-columns: repeat(2, 1fr);
         gap: 2rem;
     }
-    .post{
-        margin: 0;
-    }
-    .carousel{
-        width: 100%;    
-
-    }
+    
+    /*contact*/
+    
 
     .container-contact{
         margin: 0 auto;
         width: 80%;
     }
-
+    
+    /*blogposts*/
     #posts{
     
         text-align: center;
@@ -517,6 +465,11 @@ input[type="submit"]{
         padding-bottom: 1rem;
     }
     
+    /*speificpost*/
+    .post{
+        margin: 0;
+    }
+    
     #post img{
         max-height: 300px;
     }
@@ -534,7 +487,7 @@ input[type="submit"]{
     .blog-content{
         grid-template-columns: repeat(3, 1fr);
     }
-
+    /*blogposts*/
     #posts{
     
         text-align: center;
@@ -559,6 +512,8 @@ input[type="submit"]{
     .blog{
         padding-bottom: 1rem;
     }
+
+    /*specific post*/
     #post{
         text-align: center;
         padding: 1rem 0;
@@ -581,15 +536,14 @@ input[type="submit"]{
     .blog-content{
         grid-template-columns: repeat(3, 1fr);
     }
-    .carousel{
-        width: 100%;    
-
-    }
-
+    
+    /*Contact form*/
     .container-contact{
         margin: 0 auto;
         width: 80%;
     }
+    
+    /*Blogposts*/
     #posts{
     
         text-align: center;
@@ -604,7 +558,7 @@ input[type="submit"]{
         
         
     }
-
+    /*Specific blogpost*/
     #post{
         text-align: center;
         padding: 1rem 0;
