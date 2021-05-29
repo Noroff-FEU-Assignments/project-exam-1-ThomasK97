@@ -214,6 +214,10 @@ h3{
     margin: auto;
 }
 
+.carousel-slider:first-of-type{
+    display: block;
+}
+
 .carousel-slider{
     display: none;
 }
@@ -221,13 +225,12 @@ h3{
 .prev, .next{
 cursor: pointer;
 position: absolute;
-bottom: -800px;
+top: 175%;
+width: auto;
+margin-top: -22px;
 padding: 100px;
 color:var(--darklight);
-font-weight: bold;
-font-size: 50px;
-display: block;
-  
+font-size: 18px; 
 }
 
 .next {
@@ -367,17 +370,20 @@ input[type="submit"]{
 
 @media screen and (min-width: 375px){
 
+
+    /*carouselcontent*/
     .carousel-slider img{
 
         max-height: 200px;
 
     }
     
-    /*carouselslide*/
+    /*carouselslide button*/
+
 
     .prev, .next{
-        margin-bottom: 200px;
-        padding: 20px;
+        margin-top: -90px;
+        padding: 30px;
         font-size: 20px;
     }
     
@@ -450,6 +456,21 @@ input[type="submit"]{
         margin: 0 auto;
         width: 80%;
     }
+
+    /*carouselcontent*/
+    .carousel-slider img{
+
+        max-height: 300px;
+
+    }
+
+     /*carouselslide button*/
+
+    .prev, .next{
+        margin-top: -510px;
+        padding: 20px;
+        font-size: 40px;
+    }
     
 }
 
@@ -510,6 +531,21 @@ input[type="submit"]{
         width: 100%;
     }
 
+    /*carouselcontent*/
+    .carousel-slider img{
+
+        max-height: 350px;
+
+    }
+
+     /*carouselslide button*/
+
+    .prev, .next{
+        margin-top: -485px;
+        padding: 20px;
+        font-size: 50px;
+    }
+
     
 
 
@@ -562,6 +598,20 @@ input[type="submit"]{
         width: 100%;
     }
     
+    /*carouselcontent*/
+    .carousel-slider img{
+
+        max-height: 450px;
+
+    }
+
+     /*carouselslide button*/
+
+    .prev, .next{
+        margin-top: -450px;
+        padding: 20px;
+        font-size: 50px;
+    }
     
 }
 
@@ -613,15 +663,18 @@ input[type="submit"]{
         width: 100%;
     }
 
-    .prev, .next{
-        padding: 40px;
-        font-size: 50px;
-    }
+    
 
     .carousel-slider img{
 
         max-height: 500px;
 
+    }
+
+    .prev, .next{
+        margin-top: -175px;
+        padding: 200px;
+        font-size: 50px;
     }
     
 }

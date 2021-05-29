@@ -38,7 +38,7 @@ function listPosts (posts) {
 var sliderPost = 1;
 showPost(sliderPost);
 
-function plusSlides(n) {
+function slides(n) {
   showPost(sliderPost += n);
 }
 
