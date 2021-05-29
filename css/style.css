@@ -209,23 +209,51 @@ h3{
 /* carousel posts*/
 
 .slider{
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    text-align: center;
+    max-width: 1000px;
+    position: relative;
+    margin: auto;
 }
 
-.slider button{
-    border-radius: 50px;
-    border: 0;
-    font-weight: bold;
-    cursor: pointer;
-    width: 40px;
-    height: 40px;
+.carousel-slider{
+    display: none;
 }
-.slider div{
-    margin: 30px;
+
+.prev, .next{
+cursor: pointer;
+position: absolute;
+bottom: -800px;
+padding: 100px;
+color:var(--darklight);
+font-weight: bold;
+font-size: 50px;
+display: block;
+  
 }
+
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+  }
+
+.carousel-slider h3{
+    padding-top: 30px ;
+    font-size: 20px;
+    text-align: center;
+    
+}
+.carousel-slider p{
+    display: none;
+}
+
+.carousel-slider img{
+    width: 70%;
+    margin-bottom: 10px;
+    max-height: 500px;
+    margin: 0 auto;
+    padding-top: -10px;
+    padding: 50px;
+}
+
 
 
 
@@ -302,16 +330,10 @@ footer{
     padding: 35px;
     border-radius: 5px;
     
-}
-.row{
-    display: flex;
-    flex-flow: wrap;
-    margin: 0 -15;
+    
 }
 
-.column{
-    flex: 0 0 100%;
-}
+
 
 input, textarea{
     width: 50%;
@@ -345,9 +367,19 @@ input[type="submit"]{
 
 @media screen and (min-width: 375px){
 
-     
+    .carousel-slider img{
+
+        max-height: 200px;
+
+    }
     
     /*carouselslide*/
+
+    .prev, .next{
+        margin-bottom: 200px;
+        padding: 20px;
+        font-size: 20px;
+    }
     
     /*contact*/
     .container-contact{
@@ -392,6 +424,7 @@ input[type="submit"]{
         width: 100%;
     }
     
+   
 
     
 
@@ -578,6 +611,17 @@ input[type="submit"]{
     }
     #post p{
         width: 100%;
+    }
+
+    .prev, .next{
+        padding: 40px;
+        font-size: 50px;
+    }
+
+    .carousel-slider img{
+
+        max-height: 500px;
+
     }
     
 }
