@@ -19,9 +19,11 @@ function listPosts (posts) {
         mySlides += `
         <div class = "carousel-slider">
        
-            
+            <a href="bloggspesific.html?id=${post.id}">
             <h3>${post.title.rendered}</h3>
             <p>${post.content.rendered}</p>
+
+            </a>
 
         </div>
         `;
