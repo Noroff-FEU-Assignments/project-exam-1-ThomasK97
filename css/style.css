@@ -225,17 +225,19 @@ h3{
 .prev, .next{
 cursor: pointer;
 position: absolute;
-top: 175%;
+top: 140%;
 width: auto;
 margin-top: -22px;
-padding: 100px;
+padding: 300px;
 color:var(--darklight);
-font-size: 18px; 
+font-weight: bold;
+font-size: 50px;
+user-select: none;
 }
 
 .next {
     right: 0;
-    border-radius: 3px 0 0 3px;
+
   }
 
 .carousel-slider h3{
@@ -380,15 +382,23 @@ input[type="submit"]{
     
     /*carouselslide button*/
 
-
     .prev, .next{
-        margin-top: -90px;
-        padding: 30px;
+        cursor: pointer;
+        position: absolute;
+        width: auto;
+        margin-top: 160px;
+        padding: 0 30px;
         font-size: 20px;
+        
     }
+
+
+
+
+    
     
     /*contact*/
-    .container-contact{
+    :container-contact{
         margin: 0 auto;
         width: 80%;
     }
@@ -466,11 +476,17 @@ input[type="submit"]{
 
      /*carouselslide button*/
 
-    .prev, .next{
-        margin-top: -510px;
-        padding: 20px;
-        font-size: 40px;
+     .prev, .next{
+        cursor: pointer;
+        position: absolute;
+        width: auto;
+        margin-top: 1px;
+        padding: 0 30px;
+        font-size: 20px;
+        
     }
+
+   
     
 }
 
@@ -540,10 +556,14 @@ input[type="submit"]{
 
      /*carouselslide button*/
 
-    .prev, .next{
-        margin-top: -485px;
-        padding: 20px;
-        font-size: 50px;
+     .prev, .next{
+        cursor: pointer;
+        position: absolute;
+        width: auto;
+        margin-top: 100px;
+        padding: 0 30px;
+        font-size: 20px;
+        
     }
 
     
@@ -606,12 +626,18 @@ input[type="submit"]{
     }
 
      /*carouselslide button*/
-
-    .prev, .next{
-        margin-top: -450px;
-        padding: 20px;
-        font-size: 50px;
+     .prev, .next{
+        cursor: pointer;
+        position: absolute;
+        width: auto;
+        margin-top: 100px;
+        padding: 0 30px;
+        font-size: 20px;
+        
     }
+
+
+   
     
 }
 
@@ -672,10 +698,17 @@ input[type="submit"]{
     }
 
     .prev, .next{
-        margin-top: -175px;
-        padding: 200px;
+        cursor: pointer;
+        position: absolute;
+        top: 140%;
+        width: auto;
+        margin-top: -22px;
+        padding: 300px;
         font-size: 50px;
-    }
+       
+        }
+
+    
     
 }
 

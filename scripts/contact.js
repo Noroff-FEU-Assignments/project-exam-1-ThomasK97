@@ -1,5 +1,3 @@
-function validForm(){
-    alert("alert")
-}
+
 
 
