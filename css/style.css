@@ -78,6 +78,7 @@ header{
     color:rgb(185, 248, 255);
 }
 
+
 .banner{
     flex: 1;
     display: flex;
@@ -192,6 +193,7 @@ h3{
     padding: 1rem 0;
     list-style: none;
     display: inline-block; 
+    
 }
 
 #post a{
