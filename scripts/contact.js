@@ -11,7 +11,7 @@ function validation(){
     var text;
 
     if(name.length < 5){
-        text = "Please Enter valid Name";
+        text = "Please Enter a valid Name";
         error_message.innerHTML = text;
         return false;
       }
