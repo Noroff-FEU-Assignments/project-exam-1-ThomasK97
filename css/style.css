@@ -332,7 +332,74 @@ footer{
 
 /*contact form*/
 
+.wrapper{
+   position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    max-width: 350px;
+    width: 100%;
+    background: #fff;
+    padding: 50px;
   
+    
+}
+
+.wrapper h2{
+    text-align: center;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    color:var(--darklight);
+}
+
+.wrapper .input_field{
+    margin-bottom: 10px;
+    margin-left: -15px;
+
+}
+
+.wrapper .input_field input[type="text"]{
+    width: 100%;
+    border: 1px solid #e0e0e0;
+    padding: 10px;
+}
+
+.wrapper .input_field textarea[type="text"]{
+
+    width: 100%;
+    border: 1px solid #e0e0e0;
+    padding: 10px;
+}
+
+
+
+
+.wrapper .btn input[type="submit"]{
+    border: 0;
+    margin-top: 15px;
+    padding: 15px;
+    width: 100%;
+    background:var(--darklight);
+    color: black;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    font-weight: bold;
+    border-radius: 25px;
+    cursor: pointer;
+}
+
+.wrapper #error_message{
+    margin-bottom: 20px;
+    padding: 0;
+    background: #fe8b8e;
+    text-align: center;
+    font-size: 14px;
+    transition: all 0.5s ease;
+
+}
+
+
   
 
 
@@ -369,9 +436,10 @@ footer{
     
     
     /*contact*/
-    :container-contact{
+    .wrapper{
+        top: 420px;
         margin: 0 auto;
-        width: 80%;
+        width: 50%;
     }
     
    /*blogposts*/
@@ -431,11 +499,12 @@ footer{
 
     }
     /*contact*/
-   
 
-    .container-contact{
+   
+    .wrapper{
+        top: 420px;
         margin: 0 auto;
-        width: 80%;
+        width: 50%;
     }
 
     /*carouselcontent*/
@@ -473,9 +542,10 @@ footer{
     /*contact*/
     
 
-    .container-contact{
+    .wrapper{
+        top: 520px;
         margin: 0 auto;
-        width: 80%;
+        width: 100%;
     }
     
     /*blogposts*/
@@ -606,6 +676,12 @@ footer{
         font-size: 20px;
         
     }
+     /*contact*/
+    .wrapper{
+        top: 720px;
+        margin: 0 auto;
+        width: 100%;
+    }
 
 
    
@@ -678,7 +754,18 @@ footer{
         font-size: 50px;
        
         }
+   /*contact*/
+    .wrapper{
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    max-width: 350px;
+    width: 100%;
+    background: #fff;
+    padding: 50px;
 
+    }  
     
     
 }
